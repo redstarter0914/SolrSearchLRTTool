@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolrSearchLRTTool", "SolrSearchLRTTool\SolrSearchLRTTool.csproj", "{057BC445-6A5B-4F8D-9F7B-CAF80776CFFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{057BC445-6A5B-4F8D-9F7B-CAF80776CFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057BC445-6A5B-4F8D-9F7B-CAF80776CFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057BC445-6A5B-4F8D-9F7B-CAF80776CFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057BC445-6A5B-4F8D-9F7B-CAF80776CFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA76A543-66D2-4495-B15D-D7E49467A2F7}
+	EndGlobalSection
+EndGlobal
