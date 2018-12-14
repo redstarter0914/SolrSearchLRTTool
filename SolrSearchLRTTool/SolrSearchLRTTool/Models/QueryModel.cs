@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SolrSearchLRTTool
 {
+    /// <summary>
+    /// 生成查询条件
+    /// </summary>
    public class QueryModel
     {
         /// <summary>

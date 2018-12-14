@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SolrSearchLRTTool
 {
+    /// <summary>
+    /// 查询solr模型
+    /// </summary>
     public class SearchModel
     {
         /// <summary>
@@ -29,15 +32,28 @@ namespace SolrSearchLRTTool
         /// </summary>
         public int SearchNum { get; set; }
     }
-
+    /// <summary>
+    /// solr字段查询枚举
+    /// </summary>
     public enum EnumSearchType
     {
+        /// <summary>
+        /// Body
+        /// </summary>
         lnsubstringbody2g,
+        /// <summary>
+        /// Title
+        /// </summary>
         lnsubstringtitle2g,
+        /// <summary>
+        /// Abstract
+        /// </summary>
         lnjudgeitemabstract
     }
 
-
+    /// <summary>
+    /// 导入打分数据模型
+    /// </summary>
     public class ExportDataModel
     {
         /// <summary>

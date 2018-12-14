@@ -10,7 +10,6 @@ C:\Codes\Solr\SolrSearchLRTTool\SolrSearchLRTTool\SolrSearchLRTTool\bin\Debug\NP
 C:\Codes\Solr\SolrSearchLRTTool\SolrSearchLRTTool\SolrSearchLRTTool\bin\Debug\NPOI.xml
 C:\Codes\Solr\SolrSearchLRTTool\SolrSearchLRTTool\SolrSearchLRTTool\bin\Debug\NPOI.OOXML.xml
 C:\Codes\Solr\SolrSearchLRTTool\SolrSearchLRTTool\SolrSearchLRTTool\bin\Debug\NPOI.OpenXml4Net.xml
-C:\Codes\Solr\SolrSearchLRTTool\SolrSearchLRTTool\SolrSearchLRTTool\obj\Debug\SolrSearchLRTTool.csprojAssemblyReference.cache
 C:\Codes\Solr\SolrSearchLRTTool\SolrSearchLRTTool\SolrSearchLRTTool\obj\Debug\SolrSearchLRTTool.formLTRScore.resources
 C:\Codes\Solr\SolrSearchLRTTool\SolrSearchLRTTool\SolrSearchLRTTool\obj\Debug\SolrSearchLRTTool.Properties.Resources.resources
 C:\Codes\Solr\SolrSearchLRTTool\SolrSearchLRTTool\SolrSearchLRTTool\obj\Debug\SolrSearchLRTTool.csproj.GenerateResource.cache

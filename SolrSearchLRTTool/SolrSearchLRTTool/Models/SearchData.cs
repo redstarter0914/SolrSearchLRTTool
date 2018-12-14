@@ -11,7 +11,7 @@ namespace SolrSearchLRTTool
     {
 
         /// <summary>
-        /// 
+        /// 查询solr
         /// </summary>
         /// <param name="queryInfo"></param>
         /// <returns></returns>
@@ -28,7 +28,11 @@ namespace SolrSearchLRTTool
                 return null;
             }
         }
-
+        /// <summary>
+        /// 生成 URL
+        /// </summary>
+        /// <param name="queryInfo"></param>
+        /// <returns></returns>
         private static string buildRequestURI(SearchModel queryInfo)
         {
             string qstr = "";

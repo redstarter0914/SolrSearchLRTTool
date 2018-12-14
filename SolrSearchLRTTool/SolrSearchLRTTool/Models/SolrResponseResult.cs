@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace SolrSearchLRTTool
 {
+    /// <summary>
+    /// 返回solr查询结果
+    /// </summary>
     public class SolrResponseResult
     {
         /// <summary>
@@ -16,8 +19,10 @@ namespace SolrSearchLRTTool
         /// <summary>
         /// 返回response
         /// </summary>
-        public Response<SolrDocModel> Response { get; set; } 
-        //  public object Highlighting { get; set; }
+        public Response<SolrDocModel> Response { get; set; }  
+        /// <summary>
+        /// 
+        /// </summary>
         private List<string> hls = new List<string>(); 
         /// <summary>
         /// 错误提示
@@ -94,8 +99,7 @@ namespace SolrSearchLRTTool
     /// </summary> 
     public class Highlighting
     {
-        // public List<string> initial_release_date { get; set; } 
-
+      
     }
     /// <summary>
     /// 错误结果
@@ -110,6 +114,9 @@ namespace SolrSearchLRTTool
         public int Code { get; set; }
     }
 
+    /// <summary>
+    /// 执行Solr查询结果
+    /// </summary>
     public class SolrDocModel
     {
         [JsonProperty(PropertyName = "id", DefaultValueHandling = DefaultValueHandling.Include)]

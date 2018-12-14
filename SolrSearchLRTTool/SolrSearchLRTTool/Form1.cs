@@ -237,8 +237,6 @@ namespace SolrSearchLRTTool
                         QueryID = kl.QueryID,
                         QueryString = kl.QueryString
                     });
-                    //MessageBox.Show("查询失败");
-                    //return;
                 }
 
                 if (list.Count > 0)
@@ -254,9 +252,6 @@ namespace SolrSearchLRTTool
                     string filename = NPOIExcelHelper.ExportListToExcelNew(list.AsQueryable(), head, "ExportScoreData", rpath, kl.QueryID.ToString());
                     if (!string.IsNullOrEmpty(filename))
                     {
-                        //MessageBox.Show("生成成功");
-                        //this.txtKey.Clear();
-                        //return; 
                         KeyListSearchSuccess.Add(new QueryExcelModelNoData
                         {
                             ErrorType = "SearchSuccess",
@@ -272,8 +267,6 @@ namespace SolrSearchLRTTool
                             QueryID = kl.QueryID,
                             QueryString = kl.QueryString
                         });
-                        //MessageBox.Show("生成失败");
-                        //return;
                     }
                 }
                 else
@@ -284,8 +277,6 @@ namespace SolrSearchLRTTool
                         QueryID = kl.QueryID,
                         QueryString = kl.QueryString
                     });
-                    //MessageBox.Show("未查询到数据");
-                    //return;
                 }
 
                 lblnum.Text = KeyList.IndexOf(kl).ToString() + "条";

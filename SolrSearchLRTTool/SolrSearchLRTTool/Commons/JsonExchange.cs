@@ -70,6 +70,11 @@ namespace SolrSearchLRTTool
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="jsonString"></param>
+        /// <returns></returns>
         public static T ParseFormByJsonS(Stream jsonString)
         {
             try
