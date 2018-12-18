@@ -302,5 +302,11 @@ namespace SolrSearchLRTTool
             MessageBox.Show(msg);
 
         }
+
+        private void tsbtnExchangeKeyWord_Click(object sender, EventArgs e)
+        {
+            FrmKeyWord frm = new FrmKeyWord();
+            frm.Show();
+        }
     }
 }

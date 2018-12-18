@@ -48,6 +48,7 @@
             this.tsbtnCreateData = new System.Windows.Forms.ToolStripButton();
             this.label8 = new System.Windows.Forms.Label();
             this.lblnum = new System.Windows.Forms.Label();
+            this.tsbtnExchangeKeyWord = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.numScore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCreateNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStart)).BeginInit();
@@ -197,7 +198,8 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbtnCreateData});
+            this.tsbtnCreateData,
+            this.tsbtnExchangeKeyWord});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(593, 25);
@@ -237,6 +239,16 @@
             this.lblnum.Size = new System.Drawing.Size(47, 25);
             this.lblnum.TabIndex = 17;
             this.lblnum.Text = "0条";
+            // 
+            // tsbtnExchangeKeyWord
+            // 
+            this.tsbtnExchangeKeyWord.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbtnExchangeKeyWord.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnExchangeKeyWord.Image")));
+            this.tsbtnExchangeKeyWord.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnExchangeKeyWord.Name = "tsbtnExchangeKeyWord";
+            this.tsbtnExchangeKeyWord.Size = new System.Drawing.Size(76, 22);
+            this.tsbtnExchangeKeyWord.Text = "关键字转换";
+            this.tsbtnExchangeKeyWord.Click += new System.EventHandler(this.tsbtnExchangeKeyWord_Click);
             // 
             // formLTRScore
             // 
@@ -295,6 +307,7 @@
         private System.Windows.Forms.ToolStripButton tsbtnCreateData;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblnum;
+        private System.Windows.Forms.ToolStripButton tsbtnExchangeKeyWord;
     }
 }
 
