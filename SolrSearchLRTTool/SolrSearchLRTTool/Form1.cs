@@ -68,10 +68,13 @@ namespace SolrSearchLRTTool
             {
                 if (result.Response != null && result.Response.Docs.Count > 0)
                 {
+                    //int j = result.Response.Docs.Count;
                     foreach (var d in result.Response.Docs)
                     {
                         ExportDataModel edm = new ExportDataModel();
                         edm.DocID = d.Id;
+
+                        //edm.Score = j - result.Response.Docs.IndexOf(d);
                         if (model.Score > 0)
                         {
                             edm.Score = model.Score;
@@ -85,7 +88,7 @@ namespace SolrSearchLRTTool
 
                         list.Add(edm);
 
-                        lblnum.Text = result.Response.Docs.IndexOf(d).ToString() + "条";
+                        lblnum.Text = (result.Response.Docs.IndexOf(d) + 1).ToString() + "条";
                         lblnum.Refresh();
                     }
                 }
@@ -210,18 +213,20 @@ namespace SolrSearchLRTTool
                 {
                     if (result.Response != null && result.Response.Docs.Count > 0)
                     {
+                        int j = result.Response.Docs.Count + 2;
                         foreach (var d in result.Response.Docs)
                         {
                             ExportDataModel edm = new ExportDataModel();
                             edm.DocID = d.Id;
-                            if (model.Score > 0)
-                            {
-                                edm.Score = model.Score;
-                            }
-                            else
-                            {
-                                edm.Score = null;
-                            }
+                            edm.Score = j - result.Response.Docs.IndexOf(d);
+                            //if (model.Score > 0)
+                            //{
+                            //    edm.Score = model.Score;
+                            //}
+                            //else
+                            //{
+                            //    edm.Score = null;
+                            //}
                             edm.ScoreType = model.ScoreType;
                             edm.SearchKey = smodel.SearchKey;
 
@@ -279,7 +284,7 @@ namespace SolrSearchLRTTool
                     });
                 }
 
-                lblnum.Text = KeyList.IndexOf(kl).ToString() + "条";
+                lblnum.Text = (KeyList.IndexOf(kl) + 1).ToString() + "条";
                 lblnum.Refresh();
             }
 

@@ -98,7 +98,7 @@
         /// <summary>
         /// Brackets字符串  )
         /// </summary>
-        public const string EBracketsStr = "(";
+        public const string EBracketsStr = ")";
 
 
     }

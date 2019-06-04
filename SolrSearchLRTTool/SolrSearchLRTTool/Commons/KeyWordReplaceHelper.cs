@@ -89,12 +89,7 @@ namespace SolrSearchLRTTool
         /// <returns></returns>
         public static string ReplaceFBracketsS(this string faststr)
         {
-            if (faststr.ToLower().Contains(ConstantHelper.FBracketsStr))
-            {
-                return faststr.Replace("(", "").Replace("（", "");
-            }
-
-            return faststr;
+            return faststr.Replace("(", "").Replace("（", "");
         }
         /// <summary>
         ///  Brackets字符串  )
@@ -103,12 +98,7 @@ namespace SolrSearchLRTTool
         /// <returns></returns>
         public static string ReplaceEBracketsS(this string faststr)
         {
-            if (faststr.ToLower().Contains(ConstantHelper.EBracketsStr))
-            {
-                return faststr.Replace(")", "").Replace("）", "");
-            }
-
-            return faststr;
+            return faststr.Replace(")", "").Replace("）", "");
         }
         /// <summary>
         /// Keyword 拼接字符串

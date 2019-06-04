@@ -40,7 +40,7 @@ namespace SolrSearchLRTTool
             switch (queryInfo.SearchType)
             {
                 case "Body":
-                    qstr = EnumSearchType.lnsubstringtitle2g.ToString();
+                    qstr = EnumSearchType.lnsubstringbody2g.ToString();
                     break;
                 case "Title":
                     qstr = EnumSearchType.lnsubstringtitle2g.ToString();
@@ -51,8 +51,9 @@ namespace SolrSearchLRTTool
             }
             string q = string.Format("{0}:({1})", qstr, queryInfo.SearchKey);
             string fl = "&fl=id,score";
+            string sort = "&sort=score desc";
 
-            string rqstr = string.Format(@"q={0}&start={1}&rows={2}{3}", q, queryInfo.SearchStart, queryInfo.SearchNum, fl);
+            string rqstr = string.Format(@"q={0}&start={1}&rows={2}{3}{4}", q, queryInfo.SearchStart, queryInfo.SearchNum, fl, sort);
 
             return rqstr;
 
