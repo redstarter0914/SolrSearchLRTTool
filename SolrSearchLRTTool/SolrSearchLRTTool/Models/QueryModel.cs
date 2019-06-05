@@ -12,6 +12,10 @@ namespace SolrSearchLRTTool
    public class QueryModel
     {
         /// <summary>
+        /// 检索类型
+        /// </summary>
+        public string QueryType { get; set; }
+        /// <summary>
         /// 打分方式  
         /// </summary>
         public string ScoreType { get; set; }

@@ -88,6 +88,8 @@
       <DependentUpon>FrmKeyWord.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BracketContent.cs" />
+    <Compile Include="Models\EnumErrorType.cs" />
+    <Compile Include="Models\SearchDataModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\QueryExcelModel.cs" />

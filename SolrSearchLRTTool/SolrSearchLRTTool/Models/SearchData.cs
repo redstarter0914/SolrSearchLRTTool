@@ -40,13 +40,28 @@ namespace SolrSearchLRTTool
             switch (queryInfo.SearchType)
             {
                 case "Body":
+                    qstr = EnumSearchType.body.ToString(); 
+                    break;
+                case "subBody2g":
                     qstr = EnumSearchType.lnsubstringbody2g.ToString();
                     break;
                 case "Title":
+                    qstr = EnumSearchType.title.ToString();
+                    break;
+                case "subTitle2g":
                     qstr = EnumSearchType.lnsubstringtitle2g.ToString();
                     break;
                 case "Abstract":
                     qstr = EnumSearchType.lnjudgeitemabstract.ToString();
+                    break;
+                case "Keywords":
+                    qstr = EnumSearchType.keywords.ToString();
+                    break;
+                case "Description":
+                    qstr = EnumSearchType.description.ToString();
+                    break;
+                case "Urlkeywords":
+                    qstr = EnumSearchType.urlkeywords.ToString();
                     break;
             }
             string q = string.Format("{0}:({1})", qstr, queryInfo.SearchKey);

@@ -46,9 +46,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbtnCreateData = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnExchangeKeyWord = new System.Windows.Forms.ToolStripButton();
             this.label8 = new System.Windows.Forms.Label();
             this.lblnum = new System.Windows.Forms.Label();
-            this.tsbtnExchangeKeyWord = new System.Windows.Forms.ToolStripButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtKeyResult = new System.Windows.Forms.TextBox();
+            this.tslSingleBtn = new System.Windows.Forms.ToolStripLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numScore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCreateNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStart)).BeginInit();
@@ -62,7 +65,7 @@
             this.cbxType.Items.AddRange(new object[] {
             "CLICK_LOGS",
             "HUMAN_JUDGEMENT"});
-            this.cbxType.Location = new System.Drawing.Point(131, 52);
+            this.cbxType.Location = new System.Drawing.Point(131, 43);
             this.cbxType.Name = "cbxType";
             this.cbxType.Size = new System.Drawing.Size(149, 21);
             this.cbxType.TabIndex = 0;
@@ -70,7 +73,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 56);
+            this.label1.Location = new System.Drawing.Point(58, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 1;
@@ -79,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(333, 55);
+            this.label2.Location = new System.Drawing.Point(333, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 2;
@@ -87,7 +90,7 @@
             // 
             // numScore
             // 
-            this.numScore.Location = new System.Drawing.Point(382, 52);
+            this.numScore.Location = new System.Drawing.Point(382, 43);
             this.numScore.Name = "numScore";
             this.numScore.Size = new System.Drawing.Size(149, 20);
             this.numScore.TabIndex = 3;
@@ -95,7 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(66, 114);
+            this.label3.Location = new System.Drawing.Point(66, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 4;
@@ -103,7 +106,7 @@
             // 
             // txtUrl
             // 
-            this.txtUrl.Location = new System.Drawing.Point(131, 111);
+            this.txtUrl.Location = new System.Drawing.Point(131, 82);
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(400, 20);
             this.txtUrl.TabIndex = 5;
@@ -112,7 +115,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 168);
+            this.label4.Location = new System.Drawing.Point(46, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 13);
             this.label4.TabIndex = 6;
@@ -120,11 +123,12 @@
             // 
             // txtKey
             // 
-            this.txtKey.Location = new System.Drawing.Point(131, 164);
+            this.txtKey.Location = new System.Drawing.Point(131, 122);
+            this.txtKey.Multiline = true;
             this.txtKey.Name = "txtKey";
-            this.txtKey.Size = new System.Drawing.Size(400, 20);
+            this.txtKey.Size = new System.Drawing.Size(400, 81);
             this.txtKey.TabIndex = 7;
-            this.txtKey.Text = "金融商品取引法";
+            this.txtKey.Text = "金融商品取引法,金商法,金融";
             // 
             // btnCreateData
             // 
@@ -160,7 +164,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(58, 208);
+            this.label6.Location = new System.Drawing.Point(58, 226);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 13);
             this.label6.TabIndex = 12;
@@ -173,15 +177,20 @@
             this.cbxSearchType.Items.AddRange(new object[] {
             "Abstract",
             "Body",
+            "subTitle2g",
+            "subBody2g",
+            "Keywords",
+            "Description",
+            "Urlkeywords",
             "Title"});
-            this.cbxSearchType.Location = new System.Drawing.Point(131, 204);
+            this.cbxSearchType.Location = new System.Drawing.Point(131, 222);
             this.cbxSearchType.Name = "cbxSearchType";
             this.cbxSearchType.Size = new System.Drawing.Size(149, 21);
             this.cbxSearchType.TabIndex = 11;
             // 
             // numStart
             // 
-            this.numStart.Location = new System.Drawing.Point(382, 205);
+            this.numStart.Location = new System.Drawing.Point(382, 223);
             this.numStart.Name = "numStart";
             this.numStart.Size = new System.Drawing.Size(149, 20);
             this.numStart.TabIndex = 14;
@@ -189,7 +198,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(309, 209);
+            this.label7.Location = new System.Drawing.Point(309, 227);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 13);
             this.label7.TabIndex = 13;
@@ -199,10 +208,11 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbtnCreateData,
-            this.tsbtnExchangeKeyWord});
+            this.tsbtnExchangeKeyWord,
+            this.tslSingleBtn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(593, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(627, 25);
             this.toolStrip1.TabIndex = 15;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -216,30 +226,6 @@
             this.tsbtnCreateData.Text = "批量生成数据";
             this.tsbtnCreateData.Click += new System.EventHandler(this.tsbtnCreateData_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(73, 347);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 25);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "生成数量：";
-            // 
-            // lblnum
-            // 
-            this.lblnum.AutoSize = true;
-            this.lblnum.BackColor = System.Drawing.Color.Transparent;
-            this.lblnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnum.ForeColor = System.Drawing.Color.Red;
-            this.lblnum.Location = new System.Drawing.Point(204, 347);
-            this.lblnum.Name = "lblnum";
-            this.lblnum.Size = new System.Drawing.Size(47, 25);
-            this.lblnum.TabIndex = 17;
-            this.lblnum.Text = "0条";
-            // 
             // tsbtnExchangeKeyWord
             // 
             this.tsbtnExchangeKeyWord.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -250,11 +236,66 @@
             this.tsbtnExchangeKeyWord.Text = "关键字转换";
             this.tsbtnExchangeKeyWord.Click += new System.EventHandler(this.tsbtnExchangeKeyWord_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(17, 347);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(122, 25);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "生成数据：";
+            // 
+            // lblnum
+            // 
+            this.lblnum.AutoSize = true;
+            this.lblnum.BackColor = System.Drawing.Color.Transparent;
+            this.lblnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnum.ForeColor = System.Drawing.Color.Red;
+            this.lblnum.Location = new System.Drawing.Point(148, 347);
+            this.lblnum.Name = "lblnum";
+            this.lblnum.Size = new System.Drawing.Size(47, 25);
+            this.lblnum.TabIndex = 17;
+            this.lblnum.Text = "0条";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(17, 386);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(122, 25);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "执行结果：";
+            // 
+            // txtKeyResult
+            // 
+            this.txtKeyResult.Location = new System.Drawing.Point(131, 386);
+            this.txtKeyResult.Multiline = true;
+            this.txtKeyResult.Name = "txtKeyResult";
+            this.txtKeyResult.ReadOnly = true;
+            this.txtKeyResult.Size = new System.Drawing.Size(400, 151);
+            this.txtKeyResult.TabIndex = 19;
+            this.txtKeyResult.Text = "成功：A,B   失败:C,D";
+            // 
+            // tslSingleBtn
+            // 
+            this.tslSingleBtn.Name = "tslSingleBtn";
+            this.tslSingleBtn.Size = new System.Drawing.Size(111, 22);
+            this.tslSingleBtn.Text = "单关键字批量生成";
+            this.tslSingleBtn.Click += new System.EventHandler(this.toolStripLabel1_Click);
+            // 
             // formLTRScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 409);
+            this.ClientSize = new System.Drawing.Size(627, 578);
+            this.Controls.Add(this.txtKeyResult);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lblnum);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.toolStrip1);
@@ -308,6 +349,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblnum;
         private System.Windows.Forms.ToolStripButton tsbtnExchangeKeyWord;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtKeyResult;
+        private System.Windows.Forms.ToolStripLabel tslSingleBtn;
     }
 }
 

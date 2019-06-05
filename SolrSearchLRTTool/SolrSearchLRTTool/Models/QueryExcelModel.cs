@@ -12,6 +12,10 @@ namespace SolrSearchLRTTool
     public class QueryExcelModel
     {
         /// <summary>
+        /// 查询类别
+        /// </summary>
+        public string QueryType { get; set; }
+        /// <summary>
         /// 查询ID
         /// </summary>
         public int QueryID { get; set; }
@@ -21,12 +25,17 @@ namespace SolrSearchLRTTool
         public string QueryString { get; set; }
 
     }
-    
+
     /// <summary>
     /// Excel 写入模板
     /// </summary>
     public class QueryExcelModelNoData
-    {   /// <summary>
+    {
+        /// <summary>
+        /// 查询类别
+        /// </summary>
+        public string QueryType { get; set; }
+        /// <summary>
         /// 查询ID
         /// </summary>
         public int QueryID { get; set; }
@@ -37,6 +46,6 @@ namespace SolrSearchLRTTool
         /// <summary>
         /// 错误类型
         /// </summary>
-        public string ErrorType { get; set; } 
+        public string ErrorType { get; set; }
     }
 }

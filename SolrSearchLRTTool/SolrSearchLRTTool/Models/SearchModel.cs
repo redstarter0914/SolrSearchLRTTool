@@ -38,17 +38,37 @@ namespace SolrSearchLRTTool
     public enum EnumSearchType
     {
         /// <summary>
-        /// Body
+        /// Body2
         /// </summary>
         lnsubstringbody2g,
         /// <summary>
-        /// Title
+        /// Title2
         /// </summary>
         lnsubstringtitle2g,
         /// <summary>
         /// Abstract
         /// </summary>
-        lnjudgeitemabstract
+        lnjudgeitemabstract,
+        /// <summary>
+        /// Body
+        /// </summary>
+        body,
+        /// <summary>
+        /// title
+        /// </summary>
+        title,
+        /// <summary>
+        /// keywords
+        /// </summary>
+        keywords,
+        /// <summary>
+        /// urlkeywords
+        /// </summary>
+        urlkeywords,
+        /// <summary>
+        /// description
+        /// </summary>
+        description
     }
 
     /// <summary>
@@ -56,6 +76,10 @@ namespace SolrSearchLRTTool
     /// </summary>
     public class ExportDataModel
     {
+        /// <summary>
+        /// 检索类型
+        /// </summary>
+        public string QueryType { get; set; }
         /// <summary>
         /// 关键字
         /// </summary>
@@ -67,7 +91,7 @@ namespace SolrSearchLRTTool
         /// <summary>
         /// 打分
         /// </summary>
-        public decimal? Score { get; set; }      
+        public decimal? Score { get; set; }
         /// <summary>
         /// 打分类型
         /// </summary>
